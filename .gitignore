@@ -1,0 +1,17 @@
+
+*.py[cod]
+.venv/
+venv/
+
+.ipynb_checkpoints/
+
+
+.env
+.env.*
+
+.DS_Store
+Thumbs.db
+
+dist/
+build/
+*.log
