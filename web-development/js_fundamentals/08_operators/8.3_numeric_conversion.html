@@ -1,0 +1,20 @@
+<html>
+    <script>
+        // no effect on numbers
+        let x = 1;
+        alert( +x ); // 1
+
+        let y = -2;
+        alert( -y ); // 2
+
+        // converts non numbers
+        alert( +true ); // 1
+        alert( +"" ); // 0
+
+        let a = "2", b = "3";
+        alert(a + b); // "23", the binary plus concatenates strings
+        alert( +a + +b ); // 5
+        alert( Number(a) + Number(b) ); // 5
+
+    </script>
+</html>

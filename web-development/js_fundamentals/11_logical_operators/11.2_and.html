@@ -1,0 +1,21 @@
+<body>
+    <script>
+        let a = 1, b = 0;
+        alert( a && b ); // false
+
+        // if the first operand is truthy,
+        // AND returns the second operand:
+        alert( 1 && 5 ); // 5
+        alert( null && 5 ); // null
+        alert( 1 && 0 ); // 0
+        alert( 1 && 2 && 3 ); // 3
+
+        alert( 0 && "no matter what" ); // 0
+
+        alert( 1 && 2 && null && 3 ); // null
+
+        let x = 1;
+        (x > 0) && alert( 'Greater than zero!' );
+
+    </script>
+</body>

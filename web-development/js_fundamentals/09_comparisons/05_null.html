@@ -1,0 +1,14 @@
+<body>
+    <script>
+        // Strange Result: null vs 0
+
+        alert( null > 0 ); // false
+        alert( null == 0 ); // false
+        alert( null >= 0 ); // true
+
+        // equality check [ == ] and comparisons [ > < >= <= ] work differently
+        // comparisions convert null to a number treating it as 0
+        // whereas equality check doesn't
+        // Hence, null >= 0 is true and null == 0 is false
+    </script>
+</body>

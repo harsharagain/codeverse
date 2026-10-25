@@ -1,0 +1,20 @@
+<body>
+    <script>
+        let s = "my" + "string";
+        alert(s); // mystring
+
+        // if any one of the operator is string, then the other one is converted to a string too
+        alert( '1' + 2 ); // 12
+        alert( 2 + '1' ) // 21
+
+        alert( 2 + 2 + '1') // "41", not "221"
+        alert( '1' + 2 + 2 ) // "122" not "14"
+
+        alert( 6 - '2' ) // 4, '2' is converted into a number
+        alert( '6' / '2' ) //3
+        alert(" \t \n" - 2); // -2
+
+
+
+    </script>
+</body>

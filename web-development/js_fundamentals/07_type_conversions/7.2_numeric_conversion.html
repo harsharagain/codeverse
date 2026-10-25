@@ -1,0 +1,35 @@
+<body>
+    <script>
+        // Numeric Conversion
+
+        alert( "4" / "2"); // 2
+        // numeric conversions in mathematical functions and expressions happens automatically
+
+        let value = "1234";
+        alert(typeof value); // string
+        value = Number(value);
+        alert(typeof value); // number
+
+        let age = Number("this is a string");
+        age = Number(age);
+        alert(typeof age); // number 
+        // but the output of age is "NaN"
+        alert(age); // NaN
+
+        alert(Number(true)); // 1
+        alert(Number(false)); // 0
+
+        alert(Number("123x")) // NaN
+        alert(Number("      1234   ")) // 1234
+
+        let user; // undefined
+        alert(Number(user)); // NaN
+
+        let mode = null;
+        alert(Number(mode)); // 0
+
+        let str = "";
+        alert(Number(str)); // 0
+
+    </script>
+</body>

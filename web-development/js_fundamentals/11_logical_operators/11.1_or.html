@@ -1,0 +1,37 @@
+<body>
+    <script>
+
+        let a = true;
+        let b = false;
+        alert(a || b); // true
+
+        if ( 1 || 0 ) {
+            alert("Truthy!");
+        } // Truthy!
+
+        let hour = prompt("Time?");
+        let isWeekend = false
+        if (hour < 9 || hour > 18 || isWeekend) {
+            alert('The office is closed');
+        } else {
+            alert("Open!")
+        }
+
+        alert( null || 0 || 1 ); // 1
+        alert( undefined || null || 0); // 0
+
+        // Getting the first truthy value from a list of variables or expressions
+        let firstName = "";
+        let secondName = "";
+        let nickName = "SuperCoder";
+
+        alert( firstName || secondName || nickName || "Unknown"); // SuperCoder
+        //  If all variables were falsy, "Unknown" would show up
+
+        // Short-circuit evaluation
+        true || alert("not printed")
+        
+        false || alert("printed")
+
+    </script>
+</body>
