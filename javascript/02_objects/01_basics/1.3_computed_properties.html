@@ -1,0 +1,23 @@
+<body>
+    <script>
+        // We can use square brackets in an object literal, when creating an object. That's called computed properties
+
+        let fruit = prompt("Which fruit to buy?", "orange");
+
+        let bag = {
+            [fruit]: 5,
+        };
+
+        alert( bag.orange ); // 5 if fruit="orange"
+    </script>
+
+    <script>
+        let item = "band";
+
+        let cart = {
+            [item + 'Computers']: 5,
+        };
+
+        alert( cart.bandComputers ); // 5
+    </script>
+</body>

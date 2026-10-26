@@ -1,0 +1,27 @@
+<body>
+    <script>
+        // For an object property, naming has no restrictions
+        // reserved words like "for", "let", "return", etc.. can also be used
+
+        let obj = {
+            return: 1,
+            for: 2,
+            let: 3,
+            0: "test" // same as "0": "test"
+        }
+
+        alert( obj.return + obj.for + obj.let ); // 6
+
+        alert( obj["0"] ); // test
+        alert( obj[0] );   // test
+    </script>
+
+    <script>
+        // __proto__
+
+        let item = {};
+        item.__proto__ = 5; // assigning a num
+        alert( obj.__proto__ ); // [object Object] - the value is an object, didn't work as intended
+
+    </script>
+</body>

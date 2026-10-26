@@ -1,0 +1,14 @@
+<body>
+    <script>
+        function makeUser(name, age) {
+            return {
+                name: name,
+                age, // same as age: age
+            }
+        }
+
+        let user = makeUser("Alex", 21);
+        alert( user.name ) // Alex
+        alert( user.age ); // 21
+    </script>
+</body>
