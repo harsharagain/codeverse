@@ -1,0 +1,14 @@
+<body>
+    <script>
+        // Precedence of the ?? operator is the same as ||
+        // Both equal 3 in the MDN table
+        // evaluated before = and ? but aftermost operations such as + *
+
+        let height = null;
+        let width = null;
+
+        let area = (height ?? 100) * (width ?? 50);
+        alert(area);
+        
+    </script>
+</body>

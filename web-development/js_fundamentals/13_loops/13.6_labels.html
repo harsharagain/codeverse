@@ -1,0 +1,18 @@
+<body>
+    <script>
+        // A way to stop the process or whole loop if the user cancels the input
+        // a ordinary break would just break the inner loop (single loop)
+        
+        outer: for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+
+                let input = prompt(`Value at coords (${i}, ${j})`, '');
+
+                // if input is empty or canceled, then both the loops are breaked
+                if (!input) break outer;
+            }
+        }
+        
+        alert("Breaked");
+    </script>
+</body>

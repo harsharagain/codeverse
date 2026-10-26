@@ -1,0 +1,20 @@
+<body>
+    <script>
+        // The outer variable is only used if there’s no local one.
+        // If a same-named variable is declared inside the function then it shadows the outer one.
+
+        let name = "Akash";
+
+        function showMessage() {
+            let name = "Varun";
+
+            let message = "Hello, " + name;
+            alert(message);
+
+        }
+
+        showMessage(); // Hello, Varun
+
+        alert( userName ); // Akash
+    </script>
+</body>

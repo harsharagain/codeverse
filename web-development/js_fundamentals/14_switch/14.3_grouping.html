@@ -1,0 +1,22 @@
+<body>
+    <script>
+        let a = prompt("Enter num: ", 1);
+        
+        // several variants of case which shre the same code can be grouped together
+        switch (+a) {
+            case 4:
+                alert("Wrong");
+                break;
+
+            // case 3 and case 5 group together
+            case 3:
+            case 5:
+                alert("Correct");
+                break;
+            
+            default:
+                alert("Wrong");
+                break;
+        }
+    </script>
+</body>

@@ -1,0 +1,15 @@
+<body>
+    <script>
+        function showMessage(from, text="NO TEXT GIVEN") {
+            alert(from + ": " + text);
+        }
+
+        showMessage("Arun") // Arun: NO TEXT GIVEN
+        showMessage("Ishan", undefined) // ISHAN: NO TEXT GIVEN
+        showMessage("Gagan", null) // Gagan: null
+        showMessage("Karan", 36); // Karan: 36
+
+        // function showMesssage(from, text = anotherFunction()) 
+        // anotherFunction() is only executed if no text is provided
+    </script>
+</body>

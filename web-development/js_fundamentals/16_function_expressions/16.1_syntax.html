@@ -1,0 +1,22 @@
+<body>
+    <script>
+        let showMessage = function() {
+            alert("Hey!");
+        };
+
+        showMessage(); // Hey!
+
+        function exMessage() {
+            alert("Hi!");
+        };
+
+        alert(exMessage); // shows the function code
+        /** function exMessage() {
+            alert("Hi!");
+        } **/
+
+        let func = exMessage; // copy
+        func() // Hi!
+        exMessage() // Hi!
+    </script>
+</body>

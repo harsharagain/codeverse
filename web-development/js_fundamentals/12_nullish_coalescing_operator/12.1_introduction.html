@@ -1,0 +1,23 @@
+<body>
+    <script>
+        // The nullish coalescing operator is written as two question marks ??
+        // a ?? b
+        // if a is defined, then a,
+        // if a isn't defined, then b
+        // In other words, ?? returns the first argument if it’s not null/undefined
+
+        let a = null, b = 1;
+        let result = a ?? b;
+        // can be written as
+        result = (a !== null && a !== undefined) ? a : b;
+
+        let firstName = null;
+        let lastName = null;
+        let nickName = "Supercoder";
+        alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
+
+        let x = ( 1 && 2 ) ?? 3;
+        alert(x); 
+
+    </script>
+</body>

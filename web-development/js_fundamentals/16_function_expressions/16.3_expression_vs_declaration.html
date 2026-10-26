@@ -1,0 +1,31 @@
+<body>
+    <script>
+
+        // Functional Declaration
+        function sum(a, b) {
+            return a + b;
+        };
+
+        // Function Expression
+        let sum = function(a, b) {
+            return a + b;
+        };
+
+        // A Function Declaration can be called earlier than it is defined.
+        greet("Danish"); // Hello Danish
+
+        function greet(name) {
+            alert(`Hello, ${name}`);
+        }
+
+        // But it won't work with Functional Expression
+        greet("Vijay"); // Error
+
+        let greet = function(name) {
+            alert(`Hello, ${name}`);
+        };
+
+
+
+    </script>
+</body>

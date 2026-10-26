@@ -1,0 +1,16 @@
+<body>
+    <script>
+        function showMessage(from, text) {
+            from = "*" + from + "*"; // to make it look nicer
+
+            alert(from + ": " + text);
+        }
+
+        let from = "Barry";
+
+        showMessage(from, "Hello"); // *Barry*: Hello
+
+        alert(from); // Barry
+        // the value of "from" is still the same, the function modified a local copy
+    </script>
+</body>

@@ -1,0 +1,36 @@
+<body>
+    <script>
+
+        // code 1
+        function ask(question, yes, no) {
+            if (confirm(question)) {
+                yes();
+            } else {
+                no();
+            }
+        }
+
+        function showOk() {
+            alert(" You agreed");
+        }
+
+        function showCancel() {
+            alert(" You canceled the execution");
+        }
+
+        ask("Do you agree", showOk, showCancel);
+
+        // code 2
+        // using function expressions
+        function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+        }
+
+        ask(
+            "Do you agree?",
+            function() { alert(" You agreed"); },
+            function() { alert("You canceled the execution"); }
+        );
+    </script>
+</body>

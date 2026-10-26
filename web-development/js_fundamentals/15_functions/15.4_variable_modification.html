@@ -1,0 +1,20 @@
+<body>
+    <script>
+        let name = "Rahul";
+
+        function showMessage() {
+            // The function has full access to the outer variable. It can modify it as well.
+            name = 'Rohan';
+
+            let message = 'Hello, ' + name;
+            alert(message);
+        }
+
+        alert(name); // "Rahul", before the functional call
+
+        showMessage(); // "Hello, Rohan"
+
+        alert(name); // "Rohan", the value was modified by the function
+                
+    </script>
+</body>
