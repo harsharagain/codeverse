@@ -1,0 +1,18 @@
+<body>
+    <script>
+        // If there are no arguments, parentheses are empty, but they must be present
+
+        // code 1
+        let sayHi = () => alert("Hello");
+        sayHi(); // Hello
+
+        // code 2
+        let age = prompt("What's your age?", 18);
+
+        let welcome = (age < 18) ?
+        () => alert("Not Eligible!") : () => alert("Eligible!");
+        
+        welcome();
+
+    </script>
+</body>
