@@ -1,0 +1,30 @@
+<body>
+    <script>
+
+        // Method 1
+        let user = {
+            name: "Alex",
+            age: 18
+        };
+        
+        user.sayHi = function() {
+            alert("Hi!");
+        };
+        
+        user.sayHi(); // Hi!
+
+        // Method 2
+        let profile = {
+            name: "Alan",
+            age: 19
+        };
+
+        function sayHello() {
+            alert("Hello!");
+        };
+
+        profile.sayHello = sayHello;
+        profile.sayHello(); // Hello
+
+    </script>
+</body>

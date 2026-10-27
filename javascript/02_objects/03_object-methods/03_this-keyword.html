@@ -1,0 +1,22 @@
+<body>
+    <script>
+        // Using "this" to access object properties
+        let user = {
+            name: "Alex",
+
+            sayHi() {
+                alert(this.name);
+            }
+        };
+
+        user.sayHi(); // Alex
+
+        let imposter = user;
+        user = null;
+
+        alert(imposter.name); // Alex
+
+        // "this.name" refers to the object calling the method
+        // Using "user.name" would cause a TypeError because user is null
+    </script>
+</body>

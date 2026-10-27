@@ -1,0 +1,21 @@
+<body>
+    <script>
+        let user = { name: "Alex" };
+        let imposter = { name: "Jake" };
+
+        function sayHi() {
+            alert(this.name);
+        }
+
+        // Assign the same function to both objects
+        user.sayHi = sayHi;
+        imposter.sayHi = sayHi;
+
+        // "this" refers to the object calling the method
+        user.sayHi();    // Alex
+        imposter.sayHi(); // Jake
+
+        // Access and call the method using square brackets
+        user['sayHi'](); // Alex
+    </script>
+</body>
