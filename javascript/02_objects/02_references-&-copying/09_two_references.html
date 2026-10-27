@@ -1,0 +1,16 @@
+<body>
+    <script>
+        // Two references to the same object
+        let user = {
+            name: "Alex",
+            age: 18
+        };
+
+        let imposter = user; // Both refer to the same object
+
+        user = null; // user no longer refers to the object
+
+        alert(imposter.name); // "Alex" because imposter still refers to the object
+        alert(user.name);     // Error because user is null
+    </script>
+</body>

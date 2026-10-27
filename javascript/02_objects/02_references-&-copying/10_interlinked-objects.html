@@ -1,0 +1,32 @@
+<body>
+    <script>
+        function marry(man, woman) {
+            // Link both objects to each other
+            woman.husband = man;
+            man.wife = woman;
+
+            // Return an object containing both
+            return {
+                father: man,
+                mother: woman
+            };
+        }
+
+        let family = marry(
+            { name: "abc" },
+            { name: "xyz" }
+        );
+
+        // Access the father's name
+        alert(family.father.name); // "abc"
+
+        // Access the mother's name
+        alert(family.mother.name); // "xyz"
+
+        // Access the husband through the mother
+        alert(family.mother.husband.name); // "abc"
+
+        // Access the wife through the father
+        alert(family.father.wife.name); // "xyz"
+    </script>
+</body>
