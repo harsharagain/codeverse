@@ -1,0 +1,23 @@
+<body>
+    <script>
+        // Merging using Object.assign()
+
+        let user = { name: "Alex" };
+
+        let permission1 = { canView: true };
+        let permission2 = { canEdit: true };
+
+        // Copy properties of permission1 and permission2 into user
+        Object.assign(user, permission1, permission2);
+
+        // Displays "Alex"
+        alert(user.name);
+
+        // Displays true
+        alert(user.canView);
+
+        // If the copied propert name already exits, it gets overwritten
+        Object.assign(user, { name: "Bhuvan"});
+        alert(user.name); // Bhuvan
+    </script>
+</body>    

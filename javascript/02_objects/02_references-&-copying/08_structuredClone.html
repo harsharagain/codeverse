@@ -1,0 +1,38 @@
+<body>
+    <script>
+        // structuredClone() clones the object, including nested objects
+        // this mtd can clone most data types such as objects, arrays, primitive values etc..
+
+        let user = {
+            name: "Jake",
+            age: 18,
+            sizes: {
+                height: 182,
+                weight: 60
+            }
+        };
+
+        let profile = structuredClone(user);
+        
+        alert(user.sizes == profile.sizes); // false because sizes is a separate object in each clone
+
+        // Changing user doesn't affect profile
+        user.sizes.height = 160;
+
+        alert(user.sizes.height);    // 160
+        alert(profile.sizes.height); // 182
+    </script>
+    <script>
+        // structuredClone(object) supports circular references, when an object property refers to itself
+
+        let info = {}
+        
+        // CReate a circular reference
+        user.me = user;
+
+        let clone = structuredClone(user);
+
+        alert( clone.me === clone); // true because clone.me refers to clone itself, not user
+        // The circular reference is cloned correctly
+    </script>
+</body>

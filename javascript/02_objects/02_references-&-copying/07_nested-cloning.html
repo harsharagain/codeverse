@@ -1,0 +1,29 @@
+<body>
+    <script>
+        let user = {
+            name: "Jake",
+            age: 18,
+            sizes: {
+                height: 182,
+                weight: 60
+            }
+        };
+
+        // Copy user properties into a new object
+        let profile = Object.assign({}, user);
+
+        alert(user.sizes === profile.sizes); // true because both refer to the same sizes object
+
+        // Changing the nested object affects both objects
+        user.sizes.height = 160;
+
+        alert(profile.sizes.height); // 160
+        alert(user.sizes.height);    // 160
+
+        // Changing a top-level property affects only user
+        user.name = "Kevin";
+
+        alert(profile.name); // "Jake"
+        alert(user.name);    // "Kevin"
+    </script>
+</body>

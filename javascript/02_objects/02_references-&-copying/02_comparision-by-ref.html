@@ -1,0 +1,17 @@
+<body>
+    <script>
+        let x = {};
+        let y = x;
+
+        alert( y == x );  // true
+        alert( y === x ); // true
+        // Two objects are equal if they reference the same object
+
+        // Independent objects
+        let a = {};
+        let b = {};
+
+        alert( a == b ); // false, as they both ref the different object
+    </script>
+
+</body>

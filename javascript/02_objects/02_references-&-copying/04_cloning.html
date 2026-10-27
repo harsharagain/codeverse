@@ -1,0 +1,23 @@
+<body>
+    <script>
+
+        // Cloning an object by copying its properties
+        let user = {
+            name: "Alex",
+            age: 15
+        };
+
+        let profile = {}; // empty object
+
+        // Copy properties from user to profile
+        for (let key in user) {
+            profile[key] = user[key];
+        }
+
+        // Changing profile doesn't affect user
+        profile.name = "Kevin";
+
+        // Still displays "Alex"
+        alert(user.name);
+    </script>
+</body>

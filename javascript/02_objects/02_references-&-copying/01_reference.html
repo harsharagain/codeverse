@@ -1,0 +1,14 @@
+<body>
+    <script>
+        let user = {
+            name: "xyz"
+        }
+
+        let admin = user; // copy the reference
+        // now we have two variables, each storing a ref to the same object
+        // Copying an object creates one more ref to the same object
+
+        admin.name = "Jake";
+        alert( user.name ); // "Jake"
+    </script>
+</body>

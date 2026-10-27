@@ -1,0 +1,18 @@
+<body>
+    <script>
+        let user = {
+            name: "alex",
+            age: 30
+        };
+
+        // Copy user properties into a new object using Object.assign()
+        let profile = Object.assign({}, user);
+
+        alert(profile.name); // alex
+
+        // Changing profile doesn't affect user
+        profile.name = "Kevin";
+
+        alert(user.name); // alex
+    </script>
+</body>
