@@ -1,0 +1,24 @@
+<body>
+    <script>
+
+        let user = {
+            name: "Vinod",
+            age: 21
+        };
+        alert( user.noSuchProperty === undefined ); // true means "no such property"
+
+        // Syntax: "key" in object
+
+        alert( "age" in user ); // true
+        alert( "id" in user ) // false, bcz id is not present in user
+
+        // undefined
+        let profile = {
+            test: "undefined"
+        }
+
+        alert( profile.test ); // undefined
+        alert( "test" in user ); // true
+
+    </script>
+</body>

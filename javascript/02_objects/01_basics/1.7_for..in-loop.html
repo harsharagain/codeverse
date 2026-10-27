@@ -1,0 +1,27 @@
+<body>
+    <script>
+        let user = {
+            name: "Jake",
+            age: 17,
+            isAdmin: true
+        }
+
+        for (let key in user) {
+            alert( key);
+            alert(user[key]);
+        }
+    </script>
+    <script>
+        let codes = {
+            "+91": "India",
+            "+41": "Switzerland",
+            "+44": "Great Britain",
+            "+49": "Germany"
+        }
+        
+        for (let code in codes) {
+            alert(+code); // 91, 41, 44, 49
+        }
+        
+    </script>
+</body>
