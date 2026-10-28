@@ -1,0 +1,30 @@
+<body>
+
+<script>
+    let str = "Hello";
+
+    // Converts all letters to uppercase
+    alert(str.toUpperCase()); // HELLO
+
+    let n = 9.12535473;
+    // Keeps 2 digits after the decimal point
+    alert(n.toFixed(2)); // 9.13
+
+    // typeof tells us the data type
+    alert(typeof 5); // number
+
+    // Using new Number() creates an object
+    alert(typeof new Number(0)); // object
+
+    let zero = new Number(0);
+    // Objects are always truthy even if the value is 0
+    if (zero) {
+        alert("Zero is truthy!?");
+    }
+
+    // converts a string into a number
+    let num = Number("123"); // 123
+
+</script>
+
+</body>
