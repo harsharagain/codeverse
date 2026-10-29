@@ -1,0 +1,21 @@
+<body>
+    <script>
+        let str = "stringify";
+
+        // str.slice(start, end)
+        alert( str.slice(0, 5) ); // 'strin' (index 5 is not included)
+        alert( str.slice(2) ); // 'ringify', (index 2 to end)
+        alert( str.slice(-4, -1) ); // 'gif'
+        alert( str.slice(6, 2) ); // '' ( doesn't work when start > end)
+        
+        // str.substring(star, end) - almost same as slice
+        // If start > end, it swaps the two values
+        alert( str.substring(6, 2) ); // 'ring'
+        alert( str.substring(2, 6) ); // 'ring'
+
+        // str.substr(start, length)
+        // allows us to specify the length instead of the ending positon 
+        alert( str.substr(3, 4) ); // 'ing', from 3rd position get 4 characters
+        alert( str.substr(-4, 2)); // 'gi', from 4th position [counting from last] get 2 characters
+    </script>
+</body>
