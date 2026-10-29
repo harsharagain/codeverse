@@ -8,5 +8,16 @@
         alert("a".codePointAt(0)); // 97
         alert("Z".codePointAt(0)); // 90
         alert("Abcd".codePointAt(1) ); // 98 (unique code of b)
+
+        /**
+         * localeCompare() compares two strings based on language-specific rules
+         * Returns a negative number if str is less than str2
+         * Returns a positive number if str is more than str2
+         * Returns 0 if both strings are considered equal
+         */
+        alert("apple".localeCompare("banana")); // -1 (negative)
+        alert("banana".localeCompare("apple")); // +1 (positive)
+        alert("apple".localeCompare("apple")); // 0
+
     </script>
 </body>
