@@ -1,0 +1,32 @@
+<body>
+    <script>
+        // indexOf(substr, pos) returns the starting index of the substring
+        // It is case-sensitive and counts spaces too
+        let str = "Widget with id";
+
+        alert(str.indexOf("Widget")); // 0
+        alert(str.indexOf("widget")); // -1
+
+        alert( str.indexOf("id")); // 1
+        alert( str.indexOf("id", 5)); // 12
+    </script>
+    <script>
+        let str2 = "As sly as a fox, as strong as an ox";
+        let target = "as";
+
+        let pos = 0;
+
+        while (true) {
+            let foundPos = str2.indexOf(target, pos);
+            
+            if (foundPos == -1) break; // foundPos becomes -1 when target cannot be found
+
+            alert(`${target} found at ${foundPos}`);
+            pos = foundPos + 1;
+
+        }
+
+    </script>
+
+
+</body>

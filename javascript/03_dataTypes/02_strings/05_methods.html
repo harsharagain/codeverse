@@ -1,0 +1,20 @@
+<body>
+    <script>
+        // .includes method
+        let str = "Widget with";
+
+        alert( str.includes("with")); // true
+        alert( str.includes("id")); // true
+        alert( str.includes("id", 3)) // false, starts from position 3 and there is no "id"
+
+        // .startsWith 
+
+        alert( str.startsWith("Wid") ); // true
+        alert( str.startsWith("wid") ); // false, bcz case sensitive
+
+        // .endsWith
+
+        alert( str.endsWith("ith") ); // true
+        alert( str.endsWith(" with") ); // true
+    </script>
+</body>

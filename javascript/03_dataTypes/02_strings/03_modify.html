@@ -1,0 +1,14 @@
+<body>
+    <script>
+        // Strings are immutable (cannot change individual characters)
+
+        let str = "Javascript";
+
+        str[0] = "j"; // Error, Doesn't change the string
+        alert(str[0]); // J
+
+        // Create a new string with 'j' at the beginning
+        str = "j" + str.slice(1, str.length);
+        alert(str); // javascript
+    </script>
+</body>
