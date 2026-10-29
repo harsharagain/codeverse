@@ -1,0 +1,12 @@
+<body>
+    <script>
+        // Strings are compared character by character using their unicode values
+        alert('a' > 'Z'); // true bcz 'a' has a higher unicode value than 'Z'
+        alert('Österreich' > 'Zealand'); // true, letters with diacritical marks are "out of order"
+
+        // codePointAt(pos) returns the Unicode code point of a character
+        alert("a".codePointAt(0)); // 97
+        alert("Z".codePointAt(0)); // 90
+        alert("Abcd".codePointAt(1) ); // 98 (unique code of b)
+    </script>
+</body>
