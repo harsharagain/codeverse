@@ -61,6 +61,8 @@ function playGame(playerMove) {
 
 };
 
+let computerMove = '';
+
 function makeComputerMove() {
   let randomNumber = Math.random();
 
