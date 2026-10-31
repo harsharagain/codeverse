@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play Rock Paper Scissors against the computer!">
+  <title>Rock Paper Scissors</title>
+  <link rel="icon" type="image/png" href="./images/logo.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="title-container">
+    <img src="./images/logo.png" class="image-box" alt="Game logo">
+    <p class="title-box">Rock • Paper • Scissors</p>
+  </header>
+
+  <main class="game-container">
+
+    <h2 class="choose-container">Choose your move</h2>
+    <p class="description-container">Good luck - have fun!</p>
+
+    <div class="buttons-container">
+
+      <button class="rock-button" onclick="playGame('rock')">
+        <img src="./images/rock-emoji.png" class="move-icon" alt="">
+        Rock
+      </button>
+
+      <button class="paper-button" onclick="playGame('paper')">
+        <img src="./images/paper-emoji.png" class="move-icon" alt="">
+        Paper
+      </button>
+
+      <button class="scissors-button" onclick="playGame('scissors')">
+        <img src="./images/scissors-emoji.png" class="move-icon" alt="">
+        Scissors
+      </button>
+
+    </div>
+
+    <section class="result-container" aria-live="polite">
+      <p class="r1-box">
+        Paper beats Rock <br>
+        Rock beats Scissors <br>
+        Scissors beats Paper
+      </p>
+      <p class="r2-box"></p>
+    </section>
+
+    <section class="scorecard-container" aria-label="Game score">
+      <div class="your-score"></div>
+      <div class="computer"></div>
+      <div class="ties"></div>
+    </section>
+
+    <button class="reset-score-container" onclick="resetGame()">
+      Reset Score
+    </button>
+
+  </main>
+
+  <footer class="about">
+    <a href="https://github.com/harsharagain/codeverse" target="_blank" rel="noopener noreferrer">
+      About the project
+    </a>
+    <span>•</span>
+    <a href="https://github.com/harsharagain/" target="_blank" rel="noopener noreferrer">
+      harsharagain
+    </a>
+  </footer>
+
+</body>
+</html>
