@@ -1,0 +1,23 @@
+<body>
+  <script>
+    let arr1 = new Array();
+    let arr2 = [];
+    let arr3 = new Array(5);
+    let arr4 = ["Apple", "Orange", "Plum"];
+    
+    alert(arr1); //
+    alert(arr2); //
+    alert(arr3); // ,,,,
+    alert(arr3.length); // 5
+    alert(arr4); // Apple, Orange, Plum
+
+    let arr5 = ['Apple', { name: 'Jake' }, true, function() { alert('hey!'); } ];
+    alert(arr5[1].name); // "Jake"
+    alert(arr5[3]); // function() { alert('hey!'); }
+    arr5[3](); // "hey!"
+
+    alert( arr4[arr4.length-1] ); // Plum
+    alert( arr4.at(-1) ); // Plum
+
+  </script>
+</body>

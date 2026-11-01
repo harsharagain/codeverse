@@ -1,0 +1,17 @@
+<body>
+  <script>
+    let arr = ['Apple'];
+
+    let fruits = arr; // copy by reference (two variables reference the same array)
+    fruits.push('Orange'); // modify the array by reference
+    alert(arr.length); // 2, now arr is ["Apple", "Orange"]
+
+    alert(arr === fruits); // true, both variables reference the same array
+
+    fruits[9999] = 5; // out-of-bounds property assignment
+    alert(fruits.length); // 10000, length is the greatest numeric index + 1
+    
+    fruits.age = 25; // create a property 'age' in the array
+    alert(fruits.age); // 25
+  </script>
+</body>

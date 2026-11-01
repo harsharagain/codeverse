@@ -1,0 +1,23 @@
+<body>
+  <script>
+    let arr = ["Apple", "Orange", "Plum"];
+
+    for (let fruit of arr) {
+      alert(fruit); // Apple, Orange, Plum
+    }
+
+    for (let key in arr) {
+      alert(arr[key]); // Apple, Orange, Plum
+    }
+
+    let items = [ 'pen', 'book', 'lamp', 'pencil', 'eraser' ];
+
+    items.length = 3; // truncate to 3 elements
+    alert(items); // pen, book, lamp
+
+    items.length = 5; // return to 5 elements
+    alert(items[3]); // undefined: the values do not return
+
+  </script>
+</body>
+
