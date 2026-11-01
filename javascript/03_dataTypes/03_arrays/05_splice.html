@@ -10,6 +10,15 @@
 
     // Syntax: arr.splice(start[, deleteCount, elem1, ..., elemN])
     arr = ["I", "study", "JavaScript", "right", "now"];
-    arr.splic
+    arr.splice(0, 3, "Let's", "code"); // from index 0 remove 3 elements and add others instead
+    alert( arr ); // Let's,code,right,now
+
+    arr.splice(1, 1); // from index 1 remove 1 element
+    alert( arr ); // Let's,right,now
+
+    arr = ["I", "study", "JavaScript"];
+    arr.splice(2, 0, "complex", "language"); // from index 2 remove 0 and add 2 elements
+    alert( arr ); // I,study,complex,language,JavaScript
+
   </script>
 </body>

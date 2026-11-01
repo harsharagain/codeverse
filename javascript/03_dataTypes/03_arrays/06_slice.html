@@ -1,0 +1,14 @@
+<body>
+  <script>
+    // Syntax: arr.slice([start], [end])
+
+    let arr = ["mango", "banana", "cherry", "apple", "kiwi"];
+
+    alert( arr.slice(1, 4) ); // banana,cherry,apple (copy from 1 to 4)
+    alert( arr.slice(-2) ); // apple,kiwi (copy from -2 till the end)
+    alert( arr ); // mango,banana,cherry,apple,kiwi (original array is not modified)
+
+    alert( arr.slice() ); // mango,banana,cherry,apple,kiwi (copy all)
+
+  </script>
+</body>
