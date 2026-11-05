@@ -70,11 +70,16 @@ function renderToDoList() {
   for (let i = 0; i < toDoList.length; i++) {
     const todoObject = toDoList[i];
 
-    const { name, dueDate } = todoObject;
+    const { 
+      name, 
+      dueDate 
+    } = todoObject;
+
+    const trimmedName = name.trim();
 
     const html = `
       <div class="todo-list-box">
-        <div class="todo-name">${name}</div>
+        <div class="todo-name">${trimmedName}</div>
         <div class="todo-due-date">${formatDate(dueDate)}</div>
         <button onclick="removeTask(${i});"
           class="remove-button">Remove</button>
