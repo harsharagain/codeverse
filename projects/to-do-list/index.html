@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="header-box">
+      <p class="header-title">To-Do List</p>
+      <p class="current-date"></p>
+    </header>
+
+    <section class="todo-container">
+      <div class="todo-box">
+        <div class="todo-input-container">
+          <div class="todo-input">
+            <input 
+              type="text" 
+              class="name-input"
+              placeholder="Add a new task...">
+            <input 
+              type="date" 
+              class="js-due-date-input due-date-input"
+              min="2026-01-01"
+              max="2030-12-31">
+            <button 
+              class="add-button" 
+              onclick="addTask();">
+                Add
+            </button>
+          </div>
+        </div>
+
+        <div class="todo-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="github-footer">
+      <div class="github-message">
+        <h4>Want to see how it works?</h4>
+        <p>Check out the code on GitHub.</p>
+      </div>
+
+      <a href="https://github.com/harsharagain/codeverse"
+        target="_blank"
+        class="github-link">
+        <img src="https://cdn.simpleicons.org/github/FFFFFF">
+          Source
+      </a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
