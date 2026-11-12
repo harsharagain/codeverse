@@ -107,9 +107,7 @@ If something here helps you learn too, that's a bonus.
 ### `THE UNIVERSE KEEPS EXPANDING.`
 
 [![Explore GitHub](https://img.shields.io/badge/EXPLORE_MY_GITHUB-6C5CE7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/harsharagain?tab=repositories)
-<img src="https://komarev.com/ghpvc/?username=harsharagain&label=VISITS&color=6C5CE7&style=for-the-badge" alt="Repository visits"/>
 <br/><br/>
-<sub>Made with curiosity. Evolving with every commit. 🌌</sub>
 
 </div>
 
