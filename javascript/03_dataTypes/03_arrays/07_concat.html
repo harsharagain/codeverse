@@ -1,0 +1,37 @@
+<body>
+  <script>
+    // Syntax: arr.concat(arg1, arg2...)
+
+    let arr = [1, 2, 3];
+    // Original arr is not modified
+
+    alert( arr.concat([4, 5])); // 1,2,3,4,5
+    alert( arr.concat( [4, 5], [6, 7] )); // 1,2,3,4,5,6,7
+    alert( arr.concat([4, 5], 6, 7)); // 1,2,3,4,5,6,7
+    alert( arr ); 1,2,3
+  </script>
+
+  <script>
+    let nums = [1, 2];
+
+    let arrayLike = {
+      0: "text",
+      length: 25
+    };
+
+    alert( nums.concat(arrayLike) ); // 1,2,[object Object]
+  </script>
+
+    <script>
+    let nums2 = [1, 2];
+
+    let arrayLike2 = {
+      0: "text",
+      1: "text2",
+      length: 5, // length must be provided else only 1,2 i.e nums2 is returned even after concatenation
+      [Symbol.isConcatSpreadable]: true // object is now treated as array
+    };
+
+    alert( nums2.concat(arrayLike2) ); // 1,2,text,,,,
+  </script>
+</body>
