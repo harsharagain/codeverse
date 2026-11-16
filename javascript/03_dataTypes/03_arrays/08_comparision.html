@@ -1,0 +1,18 @@
+<body>
+  <script>
+    // Comparision of Arrays in JS is different, unlike other programming languages
+
+    console.log( [] == [] ); // false
+    console.log( [0] == [0] ); // false
+    // Two objects are equal == only if they're ref to the same object
+    
+    console.log( 0 == [] ); // true
+    console.log('0' == [] ); // false
+    console.log( 1 == ["hi"]); // false
+    console.log( 1 == ["1"]); // true
+    console.log( 1 == ["1", "2"]); // false
+    // In both cases, we compare a primitive with an array object. 
+    // So the array [] gets converted to primitive for the purpose of comparison and becomes an empty string ''.
+
+  </script>
+</body>
