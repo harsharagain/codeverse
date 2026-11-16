@@ -1,0 +1,24 @@
+<body>
+  <script>
+    // A function can also return a class
+    function makeClass(phrase) {
+
+      return class {
+        greet() {
+          alert(phrase); 
+        }
+      };
+    }
+
+    // Creates a class with "Hello" as its phrase
+    let User = makeClass("Hello");
+
+    // Creates an object and calls its greet() method
+    new User().greet(); // Hello
+
+    // We can create more objects using the same class
+    let user = new User();
+    user.greet(); // Hello
+
+  </script>
+</body>

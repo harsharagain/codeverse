@@ -1,0 +1,50 @@
+
+<body>
+  <script>
+    /*
+      SYNTAX:
+
+      class MyClass {
+        constructor() { ... }
+
+        method1() { ... }
+        method2() { ... }
+      }
+    */
+
+    class User {
+
+      // Runs automatically when a new object is created
+      constructor(name) {
+        this.name = name; // Stores the name in the object
+      }
+
+      // Method of the User class
+      greet() {
+        console.log(this.name);
+      }
+    }
+
+    // A class is actually a special type of function
+    console.log(typeof User); // function
+
+    // Creating an object using the User class
+    let user = new User("John");
+    user.greet(); // John
+
+
+    // Every class has a constructor in its prototype
+    alert(User === User.prototype.constructor); // true
+
+    // Class methods are stored inside the prototype
+    alert(User.prototype.greet); // Shows the greet() method code
+
+    // Shows all own property names inside the prototype
+    alert(Object.getOwnPropertyNames(User.prototype));
+    // ["constructor", "greet"]
+
+    alert(User); 
+    // class User { ... }
+
+  </script>
+</body>
