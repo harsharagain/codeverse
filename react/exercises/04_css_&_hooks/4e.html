@@ -51,6 +51,13 @@
     <script type="text/babel">
 
       function LoginForm() {
+
+        let [ showPassword, setShowPassword ] = React.useState(true);
+
+        function viewPassword() {
+          showPassword ? setShowPassword(false) : setShowPassword(true)
+        }
+
         return (
           <>
             <input placeholder="Email"
@@ -60,11 +67,11 @@
               className="password-container">
                 <input p
                   placeholder="Password"
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   className="input-password"/>
-                <button
+                <button onClick={viewPassword}
                   className="visibility-button">
-                    Show
+                    {showPassword ? "Hide" : "Show"}
                 </button>
             </div>
             <button 
