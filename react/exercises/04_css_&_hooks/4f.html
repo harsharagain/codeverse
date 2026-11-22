@@ -15,8 +15,6 @@
       function App() {
         let [ currentTime, setCurrentTime ] = React.useState(dayjs().format('HH:mm:ss'));
 
-        const block = React.useRef(null);
-
         React.useEffect(() => {
           setInterval(() => {
             setCurrentTime(dayjs().format('HH:mm:ss'))
